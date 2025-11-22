@@ -32,3 +32,6 @@ install -DZ --target-directory=%{buildroot}%{_libdir}/systemd/system \
 systemctl daemon-reload
 
 %changelog
+* Fri Nov 21 2025 James D. Marble <jdmarble@jdmarble.com> 0.1-1
+- new package built with tito
+
