@@ -1,5 +1,5 @@
 Name: system-user-backup
-Version: 0.1
+Version: 0.2
 Release: 1%{?dist}
 Summary: Service templates for systemd that backup and restore system user state
 License: MIT
@@ -32,5 +32,8 @@ install -DZ --target-directory=%{buildroot}%{_libdir}/systemd/system \
 systemctl daemon-reload
 
 %changelog
+* Sun Feb 01 2026 James D. Marble <jdmarble@jdmarble.com> 0.2-1
+- Fix spec to include version in source tar.gz (jdmarble@jdmarble.com)
+
 * Fri Nov 21 2025 James D. Marble <jdmarble@jdmarble.com> 0.1-1
 - new package built with tito
